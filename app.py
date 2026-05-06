@@ -6,7 +6,7 @@ SECRET = random.randint(1, 100)
 
 @app.route('/')
 def root():
-    return jsonify(msg='Guess a number 1-100, try /guess/42')
+    return jsonify(msg='Guess a number 1-100, try /guess/42 - Lab 2 trigger test')
 
 @app.route('/guess/<int:n>')
 def guess(n):
